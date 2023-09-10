@@ -34,7 +34,55 @@ main{
             
         }
     }
-    
+    .section__info{
+        margin-top: 120px;
+        width: 100%;
+        .info-list{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            .info-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 565px;
+                // border: 1px solid;
+                span{
+                    width: 465px;
+                    h2{
+                        font-size: 50px;
+                        font-weight: 700;
+                        line-height: 64px;
+                        color: #232340;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        color: rgba(35, 35, 64, 0.90);
+                    }
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .section__comment{
+        margin-top: 200px;
+        width: 100%;
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 64px;
+            color: #232340;
+            margin-bottom: 142px;
+        }
+    }
 }
 
 
@@ -57,7 +105,28 @@ main{
             }
 
         }
-        
+        .section__info{
+            width: 100%;
+            height: 100%;
+            .info-list{
+                width: 100%;
+                height: 100%;
+                .info-item{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 430px;
+                    }
+                }
+            }
+        }
+    }
+    .section__comment{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -81,6 +150,33 @@ main{
                 height: 100%;
             }
         }
-        
+        .section__info{
+            width: 100%;
+            height: 100%;
+            .info-list{
+                width: 100%;
+                height: 100%;
+                .info-item{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        width: 100%;
+                        h2{
+                            font-size: 32px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    
+                }
+                .rev{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
     }
 }

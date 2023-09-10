@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,900&family=Jost:wght@400;600;900&family=Kaushan+Script&family=Lato&family=Lexend+Deca:wght@800;900&family=Montserrat:wght@400;700&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:wght@100;400;900&family=Rufina:wght@700&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,900&family=Jost:wght@400;600;900&family=Kaushan+Script&family=Lato&family=Lexend+Deca:wght@800;900&family=Montserrat:wght@400;700&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:wght@100;400;900&family=Rufina:wght@700&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,900&family=Jost:wght@400;600;900&family=Kaushan+Script&family=Lato&family=Lexend+Deca:wght@800;900&family=Montserrat:wght@400;700&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:wght@100;400;900&family=Rufina:wght@700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,900&family=Jost:wght@400;600;900&family=Kaushan+Script&family=Lato&family=Lexend+Deca:wght@800;900&family=Montserrat:wght@400;700&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:wght@100;400;900&family=Rufina:wght@700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -272,6 +273,53 @@ main .section__mockup .mockup-title p {
 main .section__mockup .mockup-title a {
   text-decoration: underline;
 }
+main .section__info {
+  margin-top: 120px;
+  width: 100%;
+}
+main .section__info .info-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+main .section__info .info-list .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 565px;
+}
+main .section__info .info-list .info-item span {
+  width: 465px;
+}
+main .section__info .info-list .info-item span h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #232340;
+}
+main .section__info .info-list .info-item span p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(35, 35, 64, 0.9);
+}
+main .section__info .info-list .info-item span a {
+  text-decoration: underline;
+}
+main .section__comment {
+  margin-top: 200px;
+  width: 100%;
+}
+main .section__comment h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #232340;
+  margin-bottom: 142px;
+}
 
 @media screen and (max-width: 800px) {
   body {
@@ -291,6 +339,28 @@ main .section__mockup .mockup-title a {
     width: 600px;
     margin: 0;
   }
+  main .section__info {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info .info-list {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info .info-list .info-item {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info .info-list .info-item img {
+    width: 430px;
+  }
+  .section__comment {
+    width: 100%;
+    height: 100%;
+  }
+  .section__comment img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
   body {
@@ -308,6 +378,146 @@ main .section__mockup .mockup-title a {
     width: 100%;
   }
   main .section__mockup img {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info .info-list {
+    width: 100%;
+    height: 100%;
+  }
+  main .section__info .info-list .info-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section__info .info-list .info-item span {
+    width: 100%;
+  }
+  main .section__info .info-list .info-item span h2 {
+    font-size: 32px;
+  }
+  main .section__info .info-list .info-item span p {
+    font-size: 16px;
+  }
+  main .section__info .info-list .rev {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 142px;
+  height: 500px;
+  background: #232340;
+}
+.footer .footer__list {
+  padding: 86px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__list .footer__list-logo {
+  height: 100%;
+  color: #F5F5F5;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.footer .footer__list .footer__list-logo span {
+  color: #5468E7;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.footer .footer__list .footer__list-logo .footer-logo-text {
+  width: 168px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.footer .footer__list .footer__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer .footer__list .footer__list-item h3 {
+  color: #5468E7;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.footer .footer__list .footer__list-item a {
+  color: #F5F5F5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.14px;
+}
+.footer .footer__list .footer__list-item input {
+  width: 268px;
+  border-radius: 4px;
+  background: rgba(245, 245, 245, 0.24);
+  padding: 11px 16px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+  }
+  .footer .footer__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .footer .footer__list .footer__list-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+  body .footer {
+    width: 100%;
+    height: 100%;
+  }
+  body .footer .footer__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  body .footer .footer__list .footer__list-item {
     width: 100%;
     height: 100%;
   }
