@@ -292,6 +292,9 @@ main .section__info .info-list .info-item {
 }
 main .section__info .info-list .info-item span {
   width: 465px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 main .section__info .info-list .info-item span h2 {
   font-size: 50px;

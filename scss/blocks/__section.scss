@@ -51,6 +51,9 @@ main{
                 // border: 1px solid;
                 span{
                     width: 465px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 26px;
                     h2{
                         font-size: 50px;
                         font-weight: 700;
